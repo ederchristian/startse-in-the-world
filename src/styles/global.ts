@@ -14,6 +14,16 @@ const GlobalStyles = createGlobalStyle`
   html, body, #__next {
     height: 100%;
   }
+
+  body {
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, a, button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
 `
 
 export default GlobalStyles
