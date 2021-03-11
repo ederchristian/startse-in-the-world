@@ -57,8 +57,9 @@ const GlobalStyles = createGlobalStyle`
 
   p,
   a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: var(--medium);
+    letter-spacing: 0.075rem;
   }
 
   a {
