@@ -1,8 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## StartSe in the World
 
+> A page to show pinned places that StartSe is located (Brazil, the USA, China, Israel, and Portugal)
 ## Getting Started
 
-First, run the development server:
+### GraphCMS
+
+This project uses [GraphCMS](https://graphcms.com/), so you need to create an account there first.
+
+After you need to create the Schema, just follow the steps:
+
+- Schema > Add New Model with `Place` name
+- And add the following fields:
+  - `Single Line Text` as `name`
+  - `Slug` as `slug`
+  - `Map` as `location`
+  - `Rich Text` as `description`
+  - `Asset Picker` as `gallery`
+
+- Schema > Add New Model with `Page` name
+- And add the following fields:
+  - `Single Line Text` as `heading`
+  - `Slug` as `slug`
+  - `Rich Text` as `body`
+
+After that, fill some values and don't forget to `publish`.
+
+#### Authentication
+
+In order to create a token access, go to `Settings > API Access`, inside this page, find `Permanent Auth Tokens`,
+create a Token Name and mark all queries possible. Save and get the token.
+
+### NextJS
+
+After creating your account on [GraphCMS](https://graphcms.com/) and following the steps above, you need to create a `.env.local` file at the root of your project (if you plan to run locally) and edit the following keys there:
+
+```bash
+GRAPHQL_HOST=
+GRAPHQL_TOKEN=
+NEXT_PUBLIC_MAPBOX_API_KEY=
+NEXT_PUBLIC_MAPBOX_USERID=
+NEXT_PUBLIC_MAPBOX_STYLEID=
+```
+
+With all set, you can start the application with:
 
 ```bash
 npm run dev
@@ -10,13 +50,18 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Commands
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `dev`: runs your application on `localhost:3000`
+- `start`: starts a simple server with the build production code
+- `build`: creates the production build version
+- `lint`: runs the linter in all components and pages
+- `test`: runs Jest to test all components and pages
+- `test:watch`: runs jest in watch mode
 
 ## Learn More
 
@@ -29,6 +74,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
