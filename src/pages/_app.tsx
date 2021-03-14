@@ -1,6 +1,9 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
+import SEO from '../../next-seo.config'
+import { DefaultSeo } from 'next-seo'
+
 import NextNprogress from 'nextjs-progressbar'
 
 import GlobalStyles from 'styles/global'
@@ -9,11 +12,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>StartSe in the World</title>
-        <meta
-          name="description"
-          content="StartSe - We are a business school for anyone who wants to transform their future today. Present in Brazil, USA, China, Israel, Portugal, and India."
-        />
+        <DefaultSeo {...SEO} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
