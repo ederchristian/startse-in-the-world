@@ -15,4 +15,11 @@ export const Heading = styled.h1`
   margin-bottom: var(--medium);
 `
 
-export const Body = styled.div``
+export const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  p {
+    padding-bottom: var(--small);
+  }
+`

@@ -64,6 +64,15 @@ const GlobalStyles = createGlobalStyle`
 
   a {
     color: var(--highlight);
+    font-weight: 400;
+  }
+
+  .leaflet-top.leaflet-left .leaflet-control {
+    margin: 16px 0 0 32px;
+  }
+
+  .leaflet-bottom.leaflet-right {
+    display: none;
   }
 `
 
