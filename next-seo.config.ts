@@ -2,7 +2,7 @@ export default {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ederchristian.com/startse-in-the-world',
+    url: 'https://startse-in-the-world.vercel.app',
     site_name: 'StartSe in the World'
   },
   twitter: {

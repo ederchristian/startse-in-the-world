@@ -40,9 +40,9 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
           place.description?.text ||
           'StartSe - We are a business school for anyone who wants to transform their future today. Present in Brazil, the USA, China, Israel, and Portugal.'
         }
-        canonical="https://ederchristian.com/startse-in-the-world"
+        canonical="https://startse-in-the-world.vercel.app"
         openGraph={{
-          url: 'https://ederchristian.com/startse-in-the-world',
+          url: 'https://startse-in-the-world.vercel.app',
           title: `${place.name} - StartSe in the World`,
           description:
             place.description?.text ||

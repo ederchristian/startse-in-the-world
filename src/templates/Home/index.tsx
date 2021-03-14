@@ -16,16 +16,15 @@ export default function HomeTemplate({ places }: MapProps) {
       <NextSeo
         title="StartSe in the World"
         description="StartSe - We are a business school for anyone who wants to transform their future today. Present in Brazil, the USA, China, Israel, and Portugal."
-        canonical="https://ederchristian.com/startse-in-the-world"
+        canonical="https://startse-in-the-world.vercel.app"
         openGraph={{
-          url: 'https://ederchristian.com/startse-in-the-world',
+          url: 'https://startse-in-the-world.vercel.app',
           title: 'StartSe in the World',
           description:
             'StartSe - We are a business school for anyone who wants to transform their future today. Present in Brazil, the USA, China, Israel, and Portugal.',
           images: [
             {
-              url:
-                'https://ederchristian.com/startse-in-the-world/img/cover.png',
+              url: 'https://startse-in-the-world.vercel.app/img/cover.png',
               width: 1280,
               height: 720,
               alt: 'StartSe in the World'
