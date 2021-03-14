@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo'
 
 import LinkWrapper from 'components/LinkWrapper'
 
-import { CloseOutline } from '@styled-icons/evaicons-outline/closeOutline'
+import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 
 import * as Styled from './styles'
 
