@@ -1,5 +1,7 @@
 ## StartSe in the World
 
+[![License](https://img.shields.io/github/license/ederchristian/ederchristian.github.io?color=%2300d59f)](https://github.com/ederchristian/startse-in-the-world/blob/main/LICENSE)
+
 > A page to show pinned places that StartSe is located (Brazil, the USA, China, Israel, and Portugal)
 ## Getting Started
 
