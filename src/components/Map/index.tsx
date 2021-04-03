@@ -44,6 +44,10 @@ const Map = ({ places }: MapProps) => {
         center={[0, 0]}
         zoom={2}
         minZoom={2}
+        maxBounds={[
+          [-180, 180],
+          [180, -180]
+        ]}
         style={{ width: '100%', height: '100%' }}
       >
         <CustomTileLayer />
